@@ -1,0 +1,143 @@
+
+<html>
+	<head>
+		<link rel ="stylesheet" type="text/css" href="./css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+		<title> Caricature Maker </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+	<body>
+	<div class="row">
+		<div class="column">
+			<h2>Welcome to your Caricature Maker </h2>
+			<br>
+			<p> select your character Attribute </p>
+			<div id="attbbx">
+				<input type ="radio" name = "selclk" id="headrd" checked=true value="head"> Hair and hats
+				<input type ="radio" name = "selclk" value="face"> Faces
+				<input type ="radio" name = "selclk" value="ears"> Ears
+				<input type ="radio" name = "selclk" value="eyes"> Eyes
+				<input type ="radio" name = "selclk" value="noses"> Noses
+				<input type ="radio" name = "selclk" value="fhair"> Facial Hair
+				<input type ="radio" name = "selclk" value="mouths"> Mouths
+				<input type ="radio" name = "selclk" value="body"> Body
+				<br><br>
+				<button class="selat" onclick ="sel()"> Select Attribute </button>
+				<button  id="prvatb" class="selat"> Previous Attribute </button>
+				<button id="nxtatb" class="selat">Next Attribute </button>
+			</div>
+
+			<br>
+
+			<div class="btnbx">
+					<button  id="prv" class="btnlft"> Prev 3 </button>
+					<button id="done" class="btnlft"> Done </button>
+					<button  id="nxt" class="btnlft"> Next 3 </button>
+			</div>
+			<br>
+			<div id="design">
+				<div class="head" id="head">
+					<div id="stimg"><img class='imgtn' onclick='headclk(1)'id='imgnm' src="img/rs/head1.png"></div>
+					<div id="stimga"><img class='imgtn' onclick='headclk(2)'id='imgnma' src="img/rs/head2.png"></div>
+					<div id="stimgb"><img class='imgtn' onclick='headclk(3)'id='imgnmb' src="img/rs/head3.png"></div>
+				</div>
+
+				<!--<div class="face" id="face">
+					<div id="stfcimg"><img class='imgtn' onclick='faceclk()'	id='fc' src="img/rs/face1.png"></div>
+					<div id="stfcimga"><img class='imgtn' onclick='faceclka()'id='fca' src="img/rs/face2.png"></div>
+					<div id="stfcimgb"><img class='imgtn' onclick='faceclkb()'id='fcb' src="img/rs/face3.png"></div>
+				</div>
+
+				<div class="ears" id="ears">
+					<div id="stearimg"><img class='imgtn' onclick='earpclk()'	id='ear' src="img/rs/earp1.png"></div>
+					<div id="stearimga"><img class='imgtn' onclick='earpclka()'id='eara' src="img/rs/earp2.png"></div>
+					<div id="stearimgb"><img class='imgtn' onclick='earpclkb()'id='earb' src="img/rs/earp3.png"></div>
+				</div>
+
+				<div class="eyes" id="eyes">
+					<div id="steyeimg"><img class='imgtn' onclick='eyesclk()'	id='eye' src="img/rs/eyes1.png"></div>
+					<div id="steyeimga"><img class='imgtn' onclick='eyesclka()'id='eyea' src="img/rs/eyes2.png"></div>
+					<div id="steyeimgb"><img class='imgtn' onclick='eyesclkb()'id='eyeb' src="img/rs/eyes3.png"></div>
+				</div>
+
+				<div class="noses" id="noses">
+					<div id="stnsimg"><img class='imgtn' onclick='nosesclk()'	id='nse' src="img/rs/noses1.png"></div>
+					<div id="stnsimga"><img class='imgtn' onclick='nosesclka()'id='nsea' src="img/rs/noses2.png"></div>
+					<div id="stnsimgb"><img class='imgtn' onclick='nosesclkb()'id='nseb' src="img/rs/noses3.png"></div>
+				</div>
+
+				<div class="fhair" id="fhair">
+					<div id="stfhairimg"><img class='imgtn' onclick='fhairclk() 'id='fr'   src="img/rs/fhair1.png"></div>
+					<div id="stfhairimga"><img class='imgtn' onclick='fhairclka()'id='fra' src="img/rs/fhair2.png"></div>
+					<div id="stfhairimgb"><img class='imgtn' onclick='fhairclkb()'id='frb' src="img/rs/fhair3.png"></div>
+				</div>
+
+
+				<div class="mouths" id="mouths">
+					<div id="stmouthimg"><img class='imgtn' onclick='mouthsclk() 'id='mth'   src="img/rs/mouths1.png"></div>
+					<div id="stmouthimga"><img class='imgtn' onclick='mouthsclka()'id='mtha' src="img/rs/mouths2.png"></div>
+					<div id="stmouthimgb"><img class='imgtn' onclick='mouthsclkb()'id='mthb' src="img/rs/mouths3.png"></div>
+				</div>
+
+				<div class="body" id="body">
+					<div id="stbodyimg"><img class='imgtn' onclick='bodyclk() 'id='bdy'   src="img/rs/body1.png"></div>
+					<div id="stbodyimga"><img class='imgtn' onclick='bodyclka()'id='bdya' src="img/rs/body2.png"></div>
+					<div id="stbodyimgb"><img class='imgtn' onclick='bodyclkb()'id='bdyb' src="img/rs/body3.png"></div>
+				</div>-->
+			</div>
+		</div>
+		<div class="midcol">
+			<div id="sidebar">
+
+
+			<button  id="wide" class="btnlft"> wider </button>
+			<button id="narrow" class="btnlft"> narrower </button>
+			<button  id="long" class="btnlft"> longer </button>
+			<button id="short" class="btnlft"> shorter </button>
+			<button id="clele" class="btnlft"> Clear Element </button>
+			<button class="btnlft" id="clear"> Clear </button>
+
+			</div>
+		</div>
+		<div class = "column" id="can">
+
+			<div id = "drawbx">
+				<img id="headbx" onclick="gtid(this.id)"  >
+				<img id="facebx" onclick="gtid(this.id)">
+				<img id="earsbx" onclick="gtid(this.id)">
+				<img id="earsabx" onclick="gtid(this.id)">
+				<img id="eyesbx" onclick="gtid(this.id)">
+				<img id="nosesbx" onclick="gtid(this.id)">
+				<img id="fhairbx" onclick="gtid(this.id)">
+				<img id="mouthsbx" onclick="gtid(this.id)">
+				<img id="bodybx" onclick="gtid(this.id)">
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+			<span class="close">&times;</span>
+
+		  </div>
+
+		</div>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous">
+		</script>
+		<script type="text/javascript" src ="./js/script.js"></script>
+
+	</body>
+
+
+</html>

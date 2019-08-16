@@ -1,0 +1,13 @@
+{
+    "imagepath": "img/rs/",
+    "attributes" :
+    {
+        "head": {"length": 38, "name": "head"},
+        "body": {"length": 34, "name": "body"},
+        "ears": {"length": 15, "name": "ears"},
+        "nose": {"length": 32, "name": "nose"},
+        "mouth": {"length": 32, "name": "mouth"},
+        "face": {"length": 9, "name": "face"},
+        "hair": {"length": 16, "name": "hair"}
+    }
+}
